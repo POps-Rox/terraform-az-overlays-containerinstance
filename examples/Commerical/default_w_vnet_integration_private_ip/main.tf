@@ -2,7 +2,7 @@
 # Licensed under the MIT License.
 
 module "mod_aci" {
-  #source  = "github.com/POps-Rox/tf-az-overlays-containerinstance"
+  #source  = "github.com/POps-Rox/terraform-az-overlays-containerinstance"
   #version = "x.x.x"
   source = "../../.."
 
