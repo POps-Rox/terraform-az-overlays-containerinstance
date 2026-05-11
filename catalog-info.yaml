@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: tf-az-overlays-containerinstance
+  name: terraform-az-overlays-containerinstance
   description: Terraform overlay module for Azure Container Instances
   annotations:
-    github.com/project-slug: POps-Rox/tf-az-overlays-containerinstance
+    github.com/project-slug: POps-Rox/terraform-az-overlays-containerinstance
     backstage.io/techdocs-ref: dir:.
   tags:
     - terraform
@@ -12,7 +12,7 @@ metadata:
     - azure
     - platform-ops
   links:
-    - url: https://github.com/POps-Rox/tf-az-overlays-containerinstance
+    - url: https://github.com/POps-Rox/terraform-az-overlays-containerinstance
       title: GitHub Repository
       icon: github
 spec:
