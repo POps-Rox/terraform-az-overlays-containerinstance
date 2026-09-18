@@ -52,9 +52,9 @@ module "aci-storage-account" {
 }
 
 resource "azurerm_storage_share" "aci-storage-share" {
-  name                 = "tools"
-  storage_account_name = module.aci-storage-account.storage_account_name
-  quota                = 5
+  name               = "tools"
+  storage_account_id = module.aci-storage-account.storage_account_id
+  quota              = 5
 }
 
 module "aci-acr" {

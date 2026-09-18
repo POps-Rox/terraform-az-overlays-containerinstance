@@ -31,6 +31,8 @@
 ## [Unreleased]
 
 ### Changed
-- Updated `required_version` from `>= 1.3` to `>= 1.9`
-- Updated `azurerm` provider constraint from `~> 3.22` to `~> 3.116`
-- Added `terraform {}` blocks with version constraints to all 4 example `versions.tf` files
+- Raised the root `azurerm` provider constraint to `>= 5.0, < 6.0`.
+- Raised all example `azurerm` provider constraints to `~> 5.6`.
+- Updated the private endpoint DNS template for `private_dns_zone_id`.
+- Updated the complete example storage share to use `storage_account_id`.
+- Added `terraform test` coverage and CI execution for module behavior.
