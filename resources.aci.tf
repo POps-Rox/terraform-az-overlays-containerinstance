@@ -166,13 +166,16 @@ resource "azurerm_container_group" "aci" {
     }
   }
 
-  diagnostics {
-    log_analytics {
-      workspace_id  = var.log_analytics_workspace_id
-      workspace_key = var.log_analytics_workspace_key
+  dynamic "diagnostics" {
+    for_each = var.log_analytics_workspace_id != null && var.log_analytics_workspace_key != null ? [1] : []
+
+    content {
+      log_analytics {
+        workspace_id  = var.log_analytics_workspace_id
+        workspace_key = var.log_analytics_workspace_key
+      }
     }
   }
 
   tags = merge(local.default_tags, var.add_tags)
 }
-
